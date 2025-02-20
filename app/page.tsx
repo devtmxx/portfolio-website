@@ -1,7 +1,7 @@
-import Hero from "@/components/hero";
+import Index from "@/components/hero";
 
 export default function Home() {
   return (
-    <Hero />
+    <Index />
   );
 }
