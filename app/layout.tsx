@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
-import { Urbanist } from "next/font/google";
 import "./globals.css";
+import { Urbanist } from "next/font/google";
 
-const urbanist = Urbanist({
-  variable: "--font-urbanist",
-  subsets: ["latin"],
-});
+const urbanist = Urbanist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "devtmxx.de",
@@ -18,9 +15,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-slate-900 text-slate-100">
+    <html lang="en" className="bg-slate-900">
       <body
-        className={`${urbanist.variable} antialiased`}
+        className={`${urbanist.className} antialiased`}
       >
         {children}
       </body>
