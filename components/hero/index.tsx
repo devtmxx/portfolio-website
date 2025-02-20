@@ -7,7 +7,7 @@ import Bounded from "@/components/bounded";
 import Shapes from "@/components/hero/shapes";
 
 const Index = () => {
-  const component = useRef(null);
+  const component = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
