@@ -13,7 +13,7 @@ const Pig = () => {
       setVisible={setVisible}
       clickable={true}
       speed={1.6}
-      position={[2.5, -1.5, -2]}
+      position={[3, -1.5, -2]}
     >
       <primitive object={pig.scene} scale={2} visible={visible} />
     </Model>
