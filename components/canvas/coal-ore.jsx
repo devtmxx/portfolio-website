@@ -4,20 +4,20 @@ import { useGLTF } from "@react-three/drei";
 import Model from "@/components/canvas/model";
 import { useState } from "react";
 
-const Player = () => {
+const CoalOre = () => {
   const [visible, setVisible] = useState(false);
-  const player = useGLTF("/models/tmxx/tmxx.gltf");
+  const coalOre = useGLTF("/models/coal_ore/model.gltf");
 
   return (
     <Model
       setVisible={setVisible}
-      clickable={false}
-      speed={0.8}
-      position={[0, -2.5, 0]}
+      clickable={true}
+      speed={1.3}
+      position={[-3, -0.5, 2]}
     >
-      <primitive object={player.scene} scale={3.5} visible={visible} />
+      <primitive object={coalOre.scene} scale={2} visible={visible} />
     </Model>
   );
 };
 
-export default Player;
+export default CoalOre;

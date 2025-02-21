@@ -4,16 +4,20 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { Float } from "@react-three/drei";
 
-const Model = ({ clickable = true, setVisible, speed, children }) => {
+const Model = ({
+  clickable = true,
+  setVisible,
+  speed,
+  position = [0, 0, 0],
+  children,
+}) => {
   const meshRef = useRef(null);
 
   const handleClick = () => {
     gsap.to(meshRef.current.rotation, {
-      x: `+=${gsap.utils.random(0, 2)}`,
-      y: `+=${gsap.utils.random(0, 2)}`,
-      z: `+=${gsap.utils.random(0, 2)}`,
+      y: `+=${gsap.utils.random(1, 2)}`,
       duration: 1.3,
-      ease: "elastic.out(1,0.3)",
+      ease: "power1.out",
     });
   };
 
@@ -45,7 +49,7 @@ const Model = ({ clickable = true, setVisible, speed, children }) => {
   return (
     <group
       ref={meshRef}
-      position={[0, 0, 0]}
+      position={position}
       onClick={clickable && handleClick}
       onPointerOver={clickable && handlePointerOver}
       onPointerOut={clickable && handlePointerOut}

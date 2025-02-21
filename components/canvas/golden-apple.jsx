@@ -4,20 +4,20 @@ import { useGLTF } from "@react-three/drei";
 import Model from "@/components/canvas/model";
 import { useState } from "react";
 
-const Player = () => {
+const GoldenApple = () => {
   const [visible, setVisible] = useState(false);
-  const player = useGLTF("/models/tmxx/tmxx.gltf");
+  const goldenApple = useGLTF("/models/golden_apple/model.gltf");
 
   return (
     <Model
       setVisible={setVisible}
-      clickable={false}
-      speed={0.8}
-      position={[0, -2.5, 0]}
+      clickable={true}
+      speed={1.9}
+      position={[3, 3.5, 1]}
     >
-      <primitive object={player.scene} scale={3.5} visible={visible} />
+      <primitive object={goldenApple.scene} scale={2} visible={visible} />
     </Model>
   );
 };
 
-export default Player;
+export default GoldenApple;

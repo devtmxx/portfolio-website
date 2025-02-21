@@ -4,20 +4,20 @@ import { useGLTF } from "@react-three/drei";
 import Model from "@/components/canvas/model";
 import { useState } from "react";
 
-const Player = () => {
+const Pig = () => {
   const [visible, setVisible] = useState(false);
-  const player = useGLTF("/models/tmxx/tmxx.gltf");
+  const pig = useGLTF("/models/pig/model.gltf");
 
   return (
     <Model
       setVisible={setVisible}
-      clickable={false}
-      speed={0.8}
-      position={[0, -2.5, 0]}
+      clickable={true}
+      speed={1.6}
+      position={[2.5, -1.5, -2]}
     >
-      <primitive object={player.scene} scale={3.5} visible={visible} />
+      <primitive object={pig.scene} scale={2} visible={visible} />
     </Model>
   );
 };
 
-export default Player;
+export default Pig;
