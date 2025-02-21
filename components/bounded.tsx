@@ -2,7 +2,7 @@ import React, { RefObject } from "react";
 import clsx from "clsx";
 
 type BoundedProps = {
-  as?: "section" | "div";
+  as?: "footer" | "section" | "div";
   ref?: RefObject<HTMLDivElement | null>;
   className?: string;
   children: React.ReactNode;

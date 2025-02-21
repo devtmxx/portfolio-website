@@ -25,9 +25,27 @@ export const navItems: NavItem[] = [
 export const ctaLabel = "Contact";
 export const ctaHref = "/contact";
 
-export const twitterHref = "";
-export const githubHref = "";
-export const linkedinHref = "";
+export type Social = {
+  label: string;
+  name: string;
+  href: string;
+};
+
+export const twitter: Social = {
+  label: "Twitter",
+  name: "tweettmxx",
+  href: "https://x.com/tweettmxx",
+};
+export const github: Social = {
+  label: "GitHub",
+  name: "devtmxx",
+  href: "https://github.com/devtmxx",
+};
+export const linkedin: Social = {
+  label: "LinkedIn",
+  name: "Tim Mauersberger",
+  href: "https://www.linkedin.com/in/tim-mauersberger/",
+};
 
 type TechItem = {
   label: string;
