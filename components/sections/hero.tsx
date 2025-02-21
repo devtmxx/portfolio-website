@@ -4,9 +4,9 @@ import { renderLetters } from "@/utils/letters";
 import { gsap } from "gsap";
 import { useEffect, useRef } from "react";
 import Bounded from "@/components/bounded";
-import Shapes from "@/components/sections/hero/shapes";
+import Canvas3D from "@/components/canvas/canvas-3d";
 
-const Index = () => {
+const Hero = () => {
   const component = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -57,7 +57,7 @@ const Index = () => {
   return (
     <Bounded ref={component}>
       <div className="grid min-h-[70vh] grid-cols-1 md:grid-cols-2 items-center">
-        <Shapes />
+        <Canvas3D />
         <div className="col-start-1 md:row-start-1">
           <h1
             className="mb-8 text-[clamp(3rem,20vmin,6.6rem)] font-extrabold leading-none tracking-tighter"
@@ -80,4 +80,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Hero;
