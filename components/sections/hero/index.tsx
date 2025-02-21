@@ -4,7 +4,7 @@ import { renderLetters } from "@/utils/letters";
 import { gsap } from "gsap";
 import { useEffect, useRef } from "react";
 import Bounded from "@/components/bounded";
-import Shapes from "@/components/hero/shapes";
+import Shapes from "@/components/sections/hero/shapes";
 
 const Index = () => {
   const component = useRef<HTMLDivElement>(null);
