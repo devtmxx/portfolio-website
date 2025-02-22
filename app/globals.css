@@ -10,3 +10,7 @@
         hsla(222, 0%, 0%, 0) 100%
     );
 }
+
+.a {
+    @apply text-slate-100 transition-colors hover:text-slate-400;
+}
