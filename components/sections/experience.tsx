@@ -1,5 +1,6 @@
 import Heading from "@/components/heading";
 import Bounded from "@/components/bounded";
+import Button from "@/components/button";
 
 const Experience = () => {
   return (
@@ -98,6 +99,8 @@ const Experience = () => {
               able to work on smaller web projects as a freelancer.
             </p>
           </div>
+
+          <Button label="See my work" href="/my-work" showIcon />
         </div>
       </Bounded>
     </section>
