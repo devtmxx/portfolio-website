@@ -4,9 +4,9 @@ import { useGLTF } from "@react-three/drei";
 import Model from "@/components/canvas/model";
 import { useState } from "react";
 
-const Pig = () => {
+const Sand = () => {
   const [visible, setVisible] = useState(false);
-  const pig = useGLTF("/models/pig/model.gltf");
+  const sand = useGLTF("/models/sand/model.glb");
 
   return (
     <Model
@@ -15,9 +15,9 @@ const Pig = () => {
       speed={1.6}
       position={[3, -1.5, -2]}
     >
-      <primitive object={pig.scene} scale={2} visible={visible} />
+      <primitive object={sand.scene} scale={2} visible={visible} />
     </Model>
   );
 };
 
-export default Pig;
+export default Sand;

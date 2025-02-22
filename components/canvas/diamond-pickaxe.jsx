@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const DiamondPickaxe = () => {
   const [visible, setVisible] = useState(false);
-  const diamondPickaxe = useGLTF("/models/diamond_pickaxe/model.gltf");
+  const diamondPickaxe = useGLTF("/models/diamond_pickaxe/model.glb");
 
   return (
     <Model

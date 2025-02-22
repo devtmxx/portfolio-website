@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const Player = () => {
   const [visible, setVisible] = useState(false);
-  const player = useGLTF("/models/tmxx/tmxx.gltf");
+  const player = useGLTF("/models/tmxx/model.glb");
 
   return (
     <Model

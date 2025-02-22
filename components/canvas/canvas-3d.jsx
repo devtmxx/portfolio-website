@@ -2,7 +2,7 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import { ContactShadows, Environment, Preload } from "@react-three/drei";
 import Player from "@/components/canvas/player";
-import Pig from "@/components/canvas/pig";
+import Sand from "@/components/canvas/sand";
 import CoalOre from "@/components/canvas/coal-ore";
 import DiamondPickaxe from "@/components/canvas/diamond-pickaxe";
 import GoldenApple from "@/components/canvas/golden-apple";
@@ -24,7 +24,7 @@ const Canvas3D = () => {
       >
         <Suspense fallback={null}>
           <Player />
-          <Pig />
+          <Sand />
           <CoalOre />
           <DiamondPickaxe />
           <GoldenApple />

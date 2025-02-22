@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const GoldenApple = () => {
   const [visible, setVisible] = useState(false);
-  const goldenApple = useGLTF("/models/golden_apple/model.gltf");
+  const goldenApple = useGLTF("/models/golden_apple/model.glb");
 
   return (
     <Model
