@@ -15,9 +15,9 @@ const Model = ({
 
   const handleClick = () => {
     gsap.to(meshRef.current.rotation, {
-      y: `+=${gsap.utils.random(1, 2)}`,
+      y: `+=2`,
       duration: 1.3,
-      ease: "power1.out",
+      ease: "elastic.out(1,0.3)",
     });
   };
 

@@ -1,18 +1,23 @@
-import { Social } from "@/constants";
 import Link from "next/link";
 import React from "react";
+import { IconType } from "react-icons";
 
 type SocialItemProps = {
-  data: Social;
+  label: string;
+  href: string;
+  name: string;
+  icon: IconType;
 };
 
-const SocialItem = ({ data }: SocialItemProps) => {
+const SocialItem = ({ label, href, name, icon: Icon }: SocialItemProps) => {
   return (
     <Link
-      href={data.href}
+      href={href}
       className="p-2 text-2xl text-slate-300 transition-all duration-150 hover:scale-125 hover:text-yellow-400"
-      aria-label={`${data.name} on ${data.label}`}
-    ></Link>
+      aria-label={`${name} on ${label}`}
+    >
+      <Icon />
+    </Link>
   );
 };
 

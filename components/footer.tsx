@@ -55,9 +55,30 @@ const Footer = () => {
         </nav>
 
         <div className="socials inline-flex justify-center sm:justify-end">
-          {github && <SocialItem data={github} />}
-          {twitter && <SocialItem data={twitter} />}
-          {linkedin && <SocialItem data={linkedin} />}
+          {github && (
+            <SocialItem
+              label={github.label}
+              href={github.href}
+              name={github.name}
+              icon={github.icon}
+            />
+          )}
+          {twitter && (
+            <SocialItem
+              label={twitter.label}
+              href={twitter.href}
+              name={twitter.name}
+              icon={twitter.icon}
+            />
+          )}
+          {linkedin && (
+            <SocialItem
+              label={linkedin.label}
+              href={linkedin.href}
+              name={linkedin.name}
+              icon={linkedin.icon}
+            />
+          )}
         </div>
       </div>
     </Bounded>

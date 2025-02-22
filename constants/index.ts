@@ -1,3 +1,6 @@
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { IconType } from "react-icons";
+
 export const firstName = "Tim";
 export const lastName = "Mauersberger";
 export const fullName = `${firstName} ${lastName}`;
@@ -29,22 +32,26 @@ export type Social = {
   label: string;
   name: string;
   href: string;
+  icon: IconType;
 };
 
 export const twitter: Social = {
   label: "Twitter",
   name: "tweettmxx",
   href: "https://x.com/tweettmxx",
+  icon: FaGithub,
 };
 export const github: Social = {
   label: "GitHub",
   name: "devtmxx",
   href: "https://github.com/devtmxx",
+  icon: FaTwitter,
 };
 export const linkedin: Social = {
   label: "LinkedIn",
   name: "Tim Mauersberger",
   href: "https://www.linkedin.com/in/tim-mauersberger/",
+  icon: FaLinkedin,
 };
 
 type TechItem = {
