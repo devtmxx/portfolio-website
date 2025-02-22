@@ -60,13 +60,13 @@ const Hero = () => {
         <Canvas3D />
         <div className="col-start-1 md:row-start-1">
           <h1
-            className="mb-8 text-[clamp(3rem,20vmin,6.6rem)] font-extrabold leading-none tracking-tighter"
+            className="mb-8 font-extrabold leading-none tracking-tighter"
             aria-label="Tim Mauersberger"
           >
-            <span className="block text-slate-300">
+            <span className="block text-slate-300 text-[clamp(1rem,20vmin,6rem)]">
               {renderLetters("Tim", "first")}
             </span>
-            <span className="-mt-[.2em] block text-slate-500">
+            <span className="-mt-[.2em] block text-slate-500 text-[clamp(1rem,20vmin,4rem)]">
               {renderLetters("Mauersberger", "last")}
             </span>
           </h1>
