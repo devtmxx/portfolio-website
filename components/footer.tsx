@@ -1,6 +1,13 @@
 import Bounded from "@/components/bounded";
 import Link from "next/link";
-import { fullName, github, linkedin, navItems, twitter } from "@/constants";
+import {
+  footerNav,
+  fullName,
+  github,
+  linkedin,
+  navItems,
+  twitter,
+} from "@/constants";
 import React from "react";
 import SocialItem from "@/components/social-item";
 
@@ -30,7 +37,7 @@ const Footer = () => {
 
         <nav className="navigation" aria-label="Footer Navigation">
           <ul className="flex items-center gap-1">
-            {navItems.map(({ label, href }, index) => (
+            {footerNav.map(({ label, href }, index) => (
               <React.Fragment key={index}>
                 <li>
                   <Link
@@ -41,7 +48,7 @@ const Footer = () => {
                   </Link>
                 </li>
 
-                {index < navItems.length - 1 && (
+                {index < navItems.length - 2 && (
                   <span
                     className="text-4xl font-thin leading-[0] text-slate-400"
                     aria-hidden="true"

@@ -25,6 +25,17 @@ export const navItems: NavItem[] = [
   },
 ];
 
+export const footerNav: NavItem[] = [
+  {
+    label: "Imprint",
+    href: "/imprint",
+  },
+  {
+    label: "Privacy Policy",
+    href: "/privacy-policy",
+  },
+];
+
 export const ctaLabel = "Contact";
 export const ctaHref = "/contact";
 
