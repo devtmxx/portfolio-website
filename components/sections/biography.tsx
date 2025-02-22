@@ -40,7 +40,7 @@ const Biography = () => {
         <Button label="Resume" href="/resume" showIcon />
 
         <Avatar
-          src="/portrait.jpg"
+          src="/portrait.webp"
           alt="Tim Mauersberger"
           width={1280}
           height={1920}
