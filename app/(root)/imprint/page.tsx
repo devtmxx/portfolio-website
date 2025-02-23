@@ -10,7 +10,7 @@ const ImprintPage = () => {
         <Heading size="sm" as="h2">
           Angaben gem&auml;ß § 5 TMG
         </Heading>
-        <p className="prose text-slate-300 prose-lg leading-none">
+        <p className="prose text-slate-300 prose-lg leading-snug">
           Tim Mauersberger
           <br />
           Lange Str. 14
@@ -21,7 +21,7 @@ const ImprintPage = () => {
         <Heading size="sm" as="h2">
           Kontakt
         </Heading>
-        <p className="prose text-slate-300 prose-lg leading-none">
+        <p className="prose text-slate-300 prose-lg leading-snug">
           Telefon: 0176 44786657
           <br />
           E-Mail hello@devtmxx.de
