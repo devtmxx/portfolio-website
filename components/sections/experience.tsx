@@ -98,9 +98,9 @@ const Experience = () => {
               profound knowledge in a short period of time in order to then be
               able to work on smaller web projects as a freelancer.
             </p>
-          </div>
 
-          <Button label="See my work" href="/my-work" showIcon />
+            <Button label="See my work" href="/my-work" showIcon />
+          </div>
         </div>
       </Bounded>
     </section>

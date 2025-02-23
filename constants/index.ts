@@ -16,12 +16,12 @@ export const navItems: NavItem[] = [
     href: "/",
   },
   {
-    label: "About",
+    label: "About Me",
     href: "/about",
   },
   {
-    label: "Projects",
-    href: "/projects",
+    label: "My Work",
+    href: "/my-work",
   },
 ];
 
@@ -86,5 +86,22 @@ export const techItems: TechItem[] = [
   {
     label: "Guice",
     color: "#29D8FF",
+  },
+];
+
+export type Work = {
+  title: string;
+  href: string;
+  tags: string[];
+  viewMoreText: string;
+};
+
+export const works: Work[] = [
+  {
+    title: "SurvivalGames",
+    href: "survival-games",
+    tags: ["minigame"],
+    viewMoreText:
+      "A fully configurable, open-source SurvivalGames minigame designed for networks",
   },
 ];
