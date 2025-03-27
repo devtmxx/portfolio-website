@@ -48,7 +48,7 @@ const ContentList = () => {
           <ContentItem
             key={index}
             ref={(el) => {
-              itemsRef.current[0] = el;
+              itemsRef.current[index] = el;
             }}
             {...item}
           />

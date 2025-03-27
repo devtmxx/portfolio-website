@@ -37,7 +37,7 @@ export const footerNav: NavItem[] = [
 ];
 
 export const ctaLabel = "Contact";
-export const ctaHref = "/contact";
+export const ctaHref = "mailto:Tim Mauersberger <hello@devtmxx.de>";
 
 export type Social = {
   label: string;
@@ -103,5 +103,19 @@ export const works: Work[] = [
     tags: ["minigame"],
     viewMoreText:
       "A fully configurable, open-source SurvivalGames minigame designed for networks",
+  },
+  {
+    title: "Abilities",
+    href: "abilities",
+    tags: ["fun"],
+    viewMoreText:
+      "Just a fun showcase of what is possible to do with Minecraft plugins",
+  },
+  {
+    title: "Trading",
+    href: "trading",
+    tags: ["administrative"],
+    viewMoreText:
+      "Advanced trading plugin that prevents scamming between players",
   },
 ];
