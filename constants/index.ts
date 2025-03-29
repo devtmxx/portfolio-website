@@ -114,7 +114,7 @@ export const works: Work[] = [
   {
     title: "Trading",
     href: "trading",
-    tags: ["administrative"],
+    tags: ["tools and utilities", "economy"],
     viewMoreText:
       "Advanced trading plugin that prevents scamming between players",
   },

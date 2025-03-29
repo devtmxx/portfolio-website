@@ -120,6 +120,20 @@ const SurvivalGamesPage = () => {
           to pre 1.9 pvp.
         </li>
       </ul>
+
+      <Heading as="h2" size="xs">
+        Test it yourself!
+      </Heading>
+
+      <p>
+        Join my testing server <span className="font-bold">devtmxx.de</span> and
+        type{" "}
+        <span className="font-mono bg-slate-800 rounded px-2 py-1">
+          /server sg
+        </span>{" "}
+        to test this plugin on a running server. The minimum amount of players
+        required is 2. Almost all configurations have been kept default.
+      </p>
     </ContentBody>
   );
 };
