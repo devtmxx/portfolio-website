@@ -50,18 +50,18 @@ export const twitter: Social = {
   label: "Twitter",
   name: "tweettmxx",
   href: "https://x.com/tweettmxx",
-  icon: FaGithub,
+  icon: FaTwitter,
 };
 export const github: Social = {
   label: "GitHub",
   name: "devtmxx",
   href: "https://github.com/devtmxx",
-  icon: FaTwitter,
+  icon: FaGithub,
 };
 export const linkedin: Social = {
   label: "LinkedIn",
   name: "Tim Mauersberger",
-  href: "https://www.linkedin.com/in/tim-mauersberger/",
+  href: "https://www.linkedin.com/in/tim-mauersberger-63796a1b7",
   icon: FaLinkedin,
 };
 

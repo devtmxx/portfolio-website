@@ -13,6 +13,7 @@ const SocialItem = ({ label, href, name, icon: Icon }: SocialItemProps) => {
   return (
     <Link
       href={href}
+      target="_blank"
       className="p-2 text-2xl text-slate-300 transition-all duration-150 hover:scale-125 hover:text-yellow-400"
       aria-label={`${name} on ${label}`}
     >

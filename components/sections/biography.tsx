@@ -2,6 +2,7 @@ import Heading from "@/components/heading";
 import Button from "@/components/button";
 import Avatar from "@/components/avatar";
 import Bounded from "@/components/bounded";
+import { ctaHref } from "@/constants";
 
 const Biography = () => {
   return (
@@ -37,7 +38,7 @@ const Biography = () => {
           </p>
         </div>
 
-        <Button label="Resume" href="/resume" showIcon />
+        <Button label="Message me" href={ctaHref} showIcon />
 
         <Avatar
           src="/portrait.webp"
