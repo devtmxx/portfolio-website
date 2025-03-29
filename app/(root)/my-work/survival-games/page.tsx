@@ -1,5 +1,6 @@
 import ContentBody from "@/components/content-body";
 import Heading from "@/components/heading";
+import Code from "@/components/code";
 
 const SurvivalGamesPage = () => {
   return (
@@ -127,12 +128,9 @@ const SurvivalGamesPage = () => {
 
       <p>
         Join my testing server <span className="font-bold">devtmxx.de</span> and
-        type{" "}
-        <span className="font-mono bg-slate-800 rounded px-2 py-1">
-          /server sg
-        </span>{" "}
-        to test this plugin on a running server. The minimum amount of players
-        required is 2. Almost all configurations have been kept default.
+        type <Code>/server sg</Code> to test this plugin on a running server.
+        The minimum amount of players required is 2. Almost all configurations
+        have been kept default.
       </p>
     </ContentBody>
   );
