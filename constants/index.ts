@@ -118,4 +118,10 @@ export const works: Work[] = [
     viewMoreText:
       "Advanced trading plugin that prevents scamming between players",
   },
+  {
+    title: "RageMode",
+    href: "rage-mode",
+    tags: ["minigame"],
+    viewMoreText: "My first minigame on a big minecraft network",
+  },
 ];
