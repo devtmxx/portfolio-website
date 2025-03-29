@@ -119,9 +119,15 @@ export const works: Work[] = [
       "Advanced trading plugin that prevents scamming between players",
   },
   {
+    title: "Lobby Jump'n'Run",
+    href: "lobby-jump-n-run",
+    tags: ["fun"],
+    viewMoreText: "A simple jump and run for GommeHD.net waiting lobbies",
+  },
+  {
     title: "RageMode",
     href: "rage-mode",
     tags: ["minigame"],
-    viewMoreText: "My first minigame on a big minecraft network",
+    viewMoreText: "My first minigame on GommeHD.net",
   },
 ];
